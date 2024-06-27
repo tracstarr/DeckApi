@@ -24,6 +24,6 @@ public class AppHost : AppHostBase, IHostingStartup
         });
         
         ConfigurePlugin<PredefinedRoutesFeature>(feature => feature.JsonApiRoute = null);
-        typeof(Authenticate).AddAttributes(new ExcludeAttribute(Feature.Metadata));  
+        //typeof(Authenticate).AddAttributes(new ExcludeAttribute(Feature.Metadata));  
     }
 }

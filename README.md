@@ -37,12 +37,17 @@ Additionally, in the API endpoints I did keep with the requested request structu
 consider removing the UserId parameter since the endpoint is already authenticated and we have the 
 userId from the session. 
 
-Swagger is added and provides basic Auth to run the endpoints from the UI. 
+Swagger is added and requires authentication. You can use the following credentials to login using
+the /auth POST endpoint. Basic auth is not setup. You will need to provide a provider of `credentials` and
 
 ``` 
 User: shopper@email.com
 Password: p@55wOrd
 ```
+
+![img.png](img.png)
+
+Authentication uses cookies and thus using standard Swagger UI Authorization doesn't work easily.
 
 There is also an added service to fetch your current logged in userId to make it easier for setting the userId on 
 required endpoints. 

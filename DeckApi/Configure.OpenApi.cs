@@ -14,7 +14,7 @@ public class ConfigureOpenApi : IHostingStartup
                 services.AddSwaggerGen();
 
                 services.AddServiceStackSwagger();
-                services.AddBasicAuth<ApplicationUser>();
+                //services.AddBasicAuth<ApplicationUser>();
                 
                 services.AddTransient<IStartupFilter,StartupFilter>();
             }
