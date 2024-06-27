@@ -40,7 +40,7 @@ userId from the session.
 Swagger is added and provides basic Auth to run the endpoints from the UI. 
 
 ``` 
-User: shopper@emaiilcom
+User: shopper@email.com
 Password: p@55wOrd
 ```
 
