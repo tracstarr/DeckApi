@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <DebugType>portable</DebugType>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\DeckApi.ServiceInterface\DeckApi.ServiceInterface.csproj" />
+    <ProjectReference Include="..\DeckApi.ServiceModel\DeckApi.ServiceModel.csproj" />
+    <PackageReference Include="FluentAssertions" Version="6.12.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.6" />
+
+    <PackageReference Include="NUnit" Version="3.13.*" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.1.*" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.*" />
+    <PackageReference Include="ServiceStack" Version="8.*" />
+    <PackageReference Include="ServiceStack.Kestrel" Version="8.*" />
+    <ProjectReference Include="..\DeckApi\DeckApi.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,37 @@
+### Basic authentication
+POST https://localhost:5001/auth/credentials
+Content-Type: application/json
+
+{
+  "username": "shopper@email.com",
+  "password": "p@55wOrd"
+}
+
+> {% client.global.set("user_id", response.body.userId); %}
+
+### GET request to example server
+GET https://localhost:5001/my-user-id
+Content-Type: application/json
+
+> {% client.global.set("user_id", response.body.userId); %}
+
+### Get cart for user
+GET https://localhost:5001/cart/{{user_id}}
+Content-Type: application/json
+
+### Update cart for user
+PUT https://localhost:5001/cart/{{user_id}}
+Content-Type: application/json
+
+{  
+  "items": [
+    {
+      "productId": 1,
+      "quantity": 3
+    },
+    {
+      "productId": 2,
+      "quantity": 3
+    }
+  ]
+}

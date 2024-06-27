@@ -1,0 +1,22 @@
+{
+  "profiles": {
+    "DeckApi": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:5001",
+      "launchUrl": "swagger"
+    },
+    "Migrate": {
+      "commandName": "Project",
+      "launchBrowser": false,
+      "commandLineArgs": "--AppTasks=migrate",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+
+}
